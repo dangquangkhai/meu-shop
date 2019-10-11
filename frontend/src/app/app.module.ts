@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SingleProductComponent } from './single-product/single-product.component';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { SingleProductComponent } from './single-product/single-product.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpModule,
     RouterModule.forRoot([
       {path: '', component: HomeComponent},
       {path: 'single-product', component: SingleProductComponent}
