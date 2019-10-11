@@ -14,7 +14,7 @@ router.get('/detail/:productId', (req, res) => {
       vm = {
           product: row[0]
       }
-      res.render('product')
+      res.render('product');
   })
 
   //Demo insert data
