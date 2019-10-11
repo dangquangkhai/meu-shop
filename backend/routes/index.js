@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var productRepo = require('../repos/productRepos');
+var productRepo = require('../repos/productRepo');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
